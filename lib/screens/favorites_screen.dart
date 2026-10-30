@@ -4,9 +4,7 @@ import '../models/coffee.dart';
 import '../widgets/coffee_card.dart';
 import 'detail_screen.dart';
 
-/// Tab 2: saved items.
 class FavoritesScreen extends StatelessWidget {
-  /// Called after favorites change so the other tabs can refresh.
   final VoidCallback onChanged;
 
   const FavoritesScreen({super.key, required this.onChanged});

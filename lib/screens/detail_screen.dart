@@ -21,7 +21,6 @@ class _DetailScreenState extends State<DetailScreen> {
 
     return Scaffold(
       extendBodyBehindAppBar: true,
-      // Back button #1: the AppBar back icon -> Navigator.pop
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -144,7 +143,6 @@ class _DetailScreenState extends State<DetailScreen> {
                   ),
                   const SizedBox(height: 12),
 
-                  // Back button #2: button in the body -> Navigator.pop
                   SizedBox(
                     width: double.infinity,
                     child: OutlinedButton.icon(

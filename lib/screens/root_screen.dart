@@ -5,7 +5,6 @@ import 'favorites_screen.dart';
 import 'home_screen.dart';
 import 'profile_screen.dart';
 
-/// Root screen with the BottomNavigationBar (Feed / Favorites / Profile).
 class RootScreen extends StatefulWidget {
   const RootScreen({super.key});
 
@@ -23,8 +22,7 @@ class _RootScreenState extends State<RootScreen> {
     final favoritesCount = coffees.where((c) => c.isFavorite).length;
 
     return Scaffold(
-      // IndexedStack keeps all tabs alive, so switching tabs or returning
-      // from DetailScreen never resets the state.
+
       body: IndexedStack(
         index: _currentIndex,
         children: [

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Network image with a brown coffee-icon placeholder while loading
-/// and when the image cannot be loaded (e.g. no internet).
 class CoffeeImage extends StatelessWidget {
   final String url;
   final double iconSize;
